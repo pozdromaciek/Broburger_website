@@ -1,0 +1,94 @@
+
+td {
+	vertical-align: middle;
+	margin-top: 0px;
+	height: 0px;
+	padding-bottom: 2em;
+}
+td.left {
+	width:80%;
+	height: 20px;
+	vertical-align: top !important;
+}
+td.right {
+	width: 20%;
+	text-align: center;
+	vertical-align: top !important;
+	font-size: 2vw;
+	color: #f1c934;
+	height: 20px;
+}
+td.info {
+	height: 20px;
+	vertical-align: top !important;
+}
+td.no-padding{
+	padding-bottom: 0em !important;
+}
+table {
+	width: 30vw;
+	margin-top:20%;
+	margin-left: 10vw;
+	cursor: default;
+
+}
+tr {
+	background-color: transparent;
+
+}
+table h2 {
+	font-size: 2vw;
+	margin-bottom: -5%;
+	font-weight: 400;
+	margin:0;
+
+}
+table h3 {
+		font-weight: 400 !important;
+		margin: 0;
+}
+
+h2.sos {
+	font-size: 1.5vw;
+	font-weight: 300;
+	margin: 0;
+}
+
+table p {
+	margin: 0;
+	opacity: 0.8;
+	font-weight: lighter;
+}
+
+table label {
+	font-size: 4vw;
+	color:#f1c934;
+	font-weight: 400;
+	text-transform: uppercase;
+	height: 20px;
+}
+
+
+
+
+@media all and (max-width: 48em) {
+	table {
+		
+		margin: 0 auto;
+		margin-top: 30%;
+		width: 90vw;
+		display: flex;
+		}
+	table label {
+		font-size: 10vw;
+	}
+	table h2 {
+		font-size: 8vw;
+	}
+	td.right {
+		font-size: 6vw;
+	}
+	h2.sos {
+	font-size: 5vw;
+}
+}

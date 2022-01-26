@@ -1,0 +1,86 @@
+.row {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10%;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 13vh;
+  width: 90vw;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 33%;
+    max-width: 50%;
+  }
+  .row {
+    margin:auto;
+    margin-top: 30%;
+  }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 33%;
+    max-width: 100%;
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1d1d1d99;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  text-transform: uppercase;
+  color: #f1c934;
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
+}
+.text::selection { background: transparent; } ::-moz-selection { background: transparent; }
